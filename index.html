@@ -18,13 +18,13 @@
         </div>  
 
         <div class="width">
-            <div class="row game line4">
+            <div class="row game line4 rounded">
                 <h2 class="col-1">4</h2>
                 <div class="col-2" onclick="setColor(this, 4)"></div>
                 <div class="col-2" onclick="setColor(this, 4)"></div>
                 <div class="col-2" onclick="setColor(this, 4)"></div>
                 <div class="col-2" onclick="setColor(this, 4)"></div>
-                <div class="col-1 game">
+                <div class="col-1 border">
                     <div class="row">
                         <div class="col-6"></div>
                         <div class="col-6"></div>
@@ -37,13 +37,13 @@
                 <div class="col-2"><button onclick="validerLigne(4)" class="btn">Valider</button></div>
             </div>
 
-            <div class="row game line3">
+            <div class="row game line3 rounded">
                     <h2 class="col-1">3</h2>
                     <div class="col-2" onclick="setColor(this, 3)"></div>
                     <div class="col-2" onclick="setColor(this, 3)"></div>
                     <div class="col-2" onclick="setColor(this, 3)"></div>
                     <div class="col-2" onclick="setColor(this, 3)"></div>
-                    <div class="col-1 game">
+                    <div class="col-1 border">
                         <div class="row">
                             <div class="col-6"></div>
                             <div class="col-6"></div>
@@ -56,13 +56,13 @@
                     <div class="col-2"><button onclick="validerLigne(3)" class="btn">Valider</button></div>
             </div>
 
-                <div class="row game line2">
+                <div class="row game line2 rounded">
                         <h2 class="col-1">2</h2>
                         <div class="col-2" onclick="setColor(this, 2)"></div>
                         <div class="col-2" onclick="setColor(this, 2)"></div>
                         <div class="col-2" onclick="setColor(this, 2)"></div>
                         <div class="col-2" onclick="setColor(this, 2)"></div>
-                        <div class="col-1 game">
+                        <div class="col-1 border">
                             <div class="row">
                                 <div class="col-6"></div>
                                 <div class="col-6"></div>
@@ -75,13 +75,13 @@
                         <div class="col-2"><button onclick="validerLigne(2)" class="btn">Valider</button></div>
                 </div>
 
-                    <div class="row game line1">
+                    <div class="row game line1 rounded">
                                 <h2 class="col-1">1</h2>
                                 <div class="col-2" onclick="setColor(this, 1)"></div>
                                 <div class="col-2" onclick="setColor(this, 1)"></div>
                                 <div class="col-2" onclick="setColor(this, 1)"></div>
                                 <div class="col-2" onclick="setColor(this, 1)"></div>
-                                <div class="col-1 game">
+                                <div class="col-1 border">
                                     <div class="row">
                                         <div class="col-6"></div>
                                         <div class="col-6"></div>
@@ -99,13 +99,19 @@
             </div>
         <br>
                 <div class="row">
-                    <div class="col-1"><button value="1" id="green" style="background-color:green;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="2" id="red" style="background-color:red;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="3" id="blue" style="background-color:blue;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="4" id="violet" style="background-color:violet;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="5" id="yellow" style="background-color:yellow;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="6" id="lightblue" style="background-color:lightblue;" onclick="newColor(this.id);"></button></div>
-                    <div class="col-1"><button value="7" id="lightgreen" style="background-color:lightgreen;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button class="rounded-circle btnLow" value="1" id="green" style="background-color:green;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="2" id="red" style="background-color:red;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="3" id="blue" style="background-color:blue;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="4" id="violet" style="background-color:violet;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="5" id="yellow" style="background-color:yellow;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="6" id="lightblue" style="background-color:lightblue;" onclick="newColor(this.id);"></button></div>
+
+                    <div class="col-1"><button class="rounded-circle btnLow" value="7" id="lightgreen" style="background-color:lightgreen;" onclick="newColor(this.id);"></button></div>
 
                 </div>
 
@@ -124,9 +130,8 @@
 			}
         }
         
-        //********************************************************************
-		//Tableau de 4 couleurs aléatoires
-		let secretColors=["red","blue","yellow","green","grey","pink"];
+       
+		let secretColors=["green","red","blue","violet","yellow","lightblue","lightgreen"];
 		for(let position = secretColors.length-1; position>=1; position--){
 			
 			//hasard reçoit un nombre entier aléatoire entre 0 et position
@@ -141,7 +146,7 @@
 		secretColors.pop();
 		secretColors.pop();
 		console.log(secretColors);
-		//********************************************************************
+		
     </script>
 </body>
 </html>

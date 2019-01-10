@@ -1,5 +1,5 @@
 .game {
-    border: 1px solid lightseagreen;
+    border: 3px solid #AAD8B0;
 }
 
 .width {
@@ -34,7 +34,26 @@
     background-color: lightgreen;
 }
 
-button {
+.border {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.btn {
+    border-radius: 3px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    padding: 5px 10px;
+    color: #333;
+    background-color: #fff;
+    vertical-align: middle;
+    background-color: lightgrey;
+    color: white;
+}
+
+.btnLow {
     border: none;
     border-radius: 3px;
     font-size: 1em;
@@ -45,10 +64,11 @@ button {
     color: #333;
     background-color: #fff;
     vertical-align: middle;
+    width: 75%;
+    height: 200%;
 }
 
-.btn{
-    background-color: lightgrey;
-    color: white;
+.row {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-
