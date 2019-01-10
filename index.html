@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mastermind</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Mastermind</h1>
+        </div>  
+
+        <div class="width">
+            <div class="row game line4">
+                <h2 class="col-1">4</h2>
+                <div class="col-2" onclick="setColor(this, 4)"></div>
+                <div class="col-2" onclick="setColor(this, 4)"></div>
+                <div class="col-2" onclick="setColor(this, 4)"></div>
+                <div class="col-2" onclick="setColor(this, 4)"></div>
+                <div class="col-1 game">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                    </div>
+                </div>
+                <div class="col-2"><button onclick="validerLigne(4)" class="btn">Valider</button></div>
+            </div>
+
+            <div class="row game line3">
+                    <h2 class="col-1">3</h2>
+                    <div class="col-2" onclick="setColor(this, 3)"></div>
+                    <div class="col-2" onclick="setColor(this, 3)"></div>
+                    <div class="col-2" onclick="setColor(this, 3)"></div>
+                    <div class="col-2" onclick="setColor(this, 3)"></div>
+                    <div class="col-1 game">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                        </div>
+                        <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-6"></div>
+                        </div>
+                    </div>
+                    <div class="col-2"><button onclick="validerLigne(3)" class="btn">Valider</button></div>
+            </div>
+
+                <div class="row game line2">
+                        <h2 class="col-1">2</h2>
+                        <div class="col-2" onclick="setColor(this, 2)"></div>
+                        <div class="col-2" onclick="setColor(this, 2)"></div>
+                        <div class="col-2" onclick="setColor(this, 2)"></div>
+                        <div class="col-2" onclick="setColor(this, 2)"></div>
+                        <div class="col-1 game">
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-6"></div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-6"></div>
+                                    <div class="col-6"></div>
+                            </div>
+                        </div>
+                        <div class="col-2"><button onclick="validerLigne(2)" class="btn">Valider</button></div>
+                </div>
+
+                    <div class="row game line1">
+                                <h2 class="col-1">1</h2>
+                                <div class="col-2" onclick="setColor(this, 1)"></div>
+                                <div class="col-2" onclick="setColor(this, 1)"></div>
+                                <div class="col-2" onclick="setColor(this, 1)"></div>
+                                <div class="col-2" onclick="setColor(this, 1)"></div>
+                                <div class="col-1 game">
+                                    <div class="row">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>   
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn" onclick="validerLigne(1)">Valider</button>
+                                </div>
+                        </div>
+            </div>
+        <br>
+                <div class="row">
+                    <div class="col-1"><button value="1" id="green" style="background-color:green;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="2" id="red" style="background-color:red;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="3" id="blue" style="background-color:blue;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="4" id="violet" style="background-color:violet;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="5" id="yellow" style="background-color:yellow;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="6" id="lightblue" style="background-color:lightblue;" onclick="newColor(this.id);"></button></div>
+                    <div class="col-1"><button value="7" id="lightgreen" style="background-color:lightgreen;" onclick="newColor(this.id);"></button></div>
+
+                </div>
+
+    </div>
+    <script>
+        let selectColor = "green";
+		let currentLine = 1;
+
+		function newColor(idColor) {
+			selectColor = idColor;
+		}
+		
+		function setColor(e, line) {
+			if (line == currentLine) {
+				e.style.backgroundColor = selectColor;
+			}
+        }
+        
+        //********************************************************************
+		//Tableau de 4 couleurs aléatoires
+		let secretColors=["red","blue","yellow","green","grey","pink"];
+		for(let position = secretColors.length-1; position>=1; position--){
+			
+			//hasard reçoit un nombre entier aléatoire entre 0 et position
+			let hasard = Math.floor(Math.random()*(position+1));
+			
+			//Echange
+			let sauve = secretColors[position];
+			secretColors[position] = secretColors[hasard];
+			secretColors[hasard] = sauve;
+
+		}
+		secretColors.pop();
+		secretColors.pop();
+		console.log(secretColors);
+		//********************************************************************
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.game {
+    border: 1px solid lightseagreen;
+}
+
+.width {
+    width: 70%;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#violet {
+    background-color: violet;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#lightblue {
+    background-color: lightblue;
+}
+
+#lightgreen {
+    background-color: lightgreen;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    padding: 5px 10px;
+    color: #333;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+.btn{
+    background-color: lightgrey;
+    color: white;
+}
+
