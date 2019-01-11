@@ -83,12 +83,12 @@
                                 <div class="col-2" onclick="setColor(this, 1)"></div>
                                 <div class="col-1 border">
                                     <div class="row">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
+                                        <div class="col-6 point1"></div>
+                                        <div class="col-6 point2"></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>   
+                                        <div class="col-6 point3"></div>
+                                        <div class="col-6 point4"></div>   
                                         
                                     </div>
                                 </div>
@@ -152,8 +152,22 @@
 		}
 		secretColors.pop();
 		secretColors.pop();
-		console.log(secretColors);
-		
+        console.log(secretColors);
+        
+        /*
+        function validerLigne(1) {
+            document.getElementsByClassName('line1')[0];
+        }
+
+        let result = validerLigne(1);
+        
+        if (secretColors == result) {
+            document.getElementsByClassName('point1')[0].innerHTML = "<div class='pointNoir rounded'></div>";
+            this.style.border = "1px solid black; background-color: black;";
+        } else {
+
+        }
+        */
     </script>
 </body>
 </html>
